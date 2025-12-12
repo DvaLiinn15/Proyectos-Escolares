@@ -2,8 +2,11 @@
 
 use App\Models\User;
 
+<<<<<<< HEAD
 uses(\Illuminate\Foundation\Testing\RefreshDatabase::class);
 
+=======
+>>>>>>> 1f12e9d397c5bc6da41e148a08dcaed57bdc64e0
 test('guests are redirected to the login page', function () {
     $response = $this->get(route('dashboard'));
     $response->assertRedirect(route('login'));

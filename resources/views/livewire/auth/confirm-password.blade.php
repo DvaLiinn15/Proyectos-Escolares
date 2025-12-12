@@ -53,6 +53,12 @@ new #[Layout('components.layouts.auth')] class extends Component {
             viewable
         />
 
+<<<<<<< HEAD
         <flux:button variant="primary" type="submit" class="w-full">{{ __('Confirm') }}</flux:button>
+=======
+        <flux:button variant="primary" type="submit" class="w-full" data-test="confirm-password-button">
+            {{ __('Confirm') }}
+        </flux:button>
+>>>>>>> 1f12e9d397c5bc6da41e148a08dcaed57bdc64e0
     </form>
 </div>

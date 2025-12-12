@@ -66,7 +66,13 @@ new class extends Component {
 
             <div class="flex items-center gap-4">
                 <div class="flex items-center justify-end">
+<<<<<<< HEAD
                     <flux:button variant="primary" type="submit" class="w-full">{{ __('Save') }}</flux:button>
+=======
+                    <flux:button variant="primary" type="submit" class="w-full" data-test="update-password-button">
+                        {{ __('Save') }}
+                    </flux:button>
+>>>>>>> 1f12e9d397c5bc6da41e148a08dcaed57bdc64e0
                 </div>
 
                 <x-action-message class="me-3" on="password-updated">

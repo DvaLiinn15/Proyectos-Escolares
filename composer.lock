@@ -4,7 +4,11 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
+<<<<<<< HEAD
     "content-hash": "fb747f4584c003fbea7da49b7e9a5f1b",
+=======
+    "content-hash": "95489b816a87845a56f6b8f764071e2b",
+>>>>>>> 1f12e9d397c5bc6da41e148a08dcaed57bdc64e0
     "packages": [
         {
             "name": "brick/math",
@@ -211,6 +215,163 @@
             "time": "2024-07-08T12:26:09+00:00"
         },
         {
+<<<<<<< HEAD
+=======
+            "name": "doctrine/dbal",
+            "version": "4.3.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/dbal.git",
+                "reference": "1a2fbd0e93b8dec7c3d1ac2b6396a7b929b130dc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/dbal/zipball/1a2fbd0e93b8dec7c3d1ac2b6396a7b929b130dc",
+                "reference": "1a2fbd0e93b8dec7c3d1ac2b6396a7b929b130dc",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/deprecations": "^1.1.5",
+                "php": "^8.2",
+                "psr/cache": "^1|^2|^3",
+                "psr/log": "^1|^2|^3"
+            },
+            "require-dev": {
+                "doctrine/coding-standard": "14.0.0",
+                "fig/log-test": "^1",
+                "jetbrains/phpstorm-stubs": "2023.2",
+                "phpstan/phpstan": "2.1.30",
+                "phpstan/phpstan-phpunit": "2.0.7",
+                "phpstan/phpstan-strict-rules": "^2",
+                "phpunit/phpunit": "11.5.23",
+                "slevomat/coding-standard": "8.24.0",
+                "squizlabs/php_codesniffer": "4.0.0",
+                "symfony/cache": "^6.3.8|^7.0",
+                "symfony/console": "^5.4|^6.3|^7.0"
+            },
+            "suggest": {
+                "symfony/console": "For helpful console commands such as SQL execution and import of files."
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Doctrine\\DBAL\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com"
+                },
+                {
+                    "name": "Roman Borschel",
+                    "email": "roman@code-factory.org"
+                },
+                {
+                    "name": "Benjamin Eberlei",
+                    "email": "kontakt@beberlei.de"
+                },
+                {
+                    "name": "Jonathan Wage",
+                    "email": "jonwage@gmail.com"
+                }
+            ],
+            "description": "Powerful PHP database abstraction layer (DBAL) with many features for database schema introspection and management.",
+            "homepage": "https://www.doctrine-project.org/projects/dbal.html",
+            "keywords": [
+                "abstraction",
+                "database",
+                "db2",
+                "dbal",
+                "mariadb",
+                "mssql",
+                "mysql",
+                "oci8",
+                "oracle",
+                "pdo",
+                "pgsql",
+                "postgresql",
+                "queryobject",
+                "sasql",
+                "sql",
+                "sqlite",
+                "sqlserver",
+                "sqlsrv"
+            ],
+            "support": {
+                "issues": "https://github.com/doctrine/dbal/issues",
+                "source": "https://github.com/doctrine/dbal/tree/4.3.4"
+            },
+            "funding": [
+                {
+                    "url": "https://www.doctrine-project.org/sponsorship.html",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://www.patreon.com/phpdoctrine",
+                    "type": "patreon"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/doctrine%2Fdbal",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2025-10-09T09:11:36+00:00"
+        },
+        {
+            "name": "doctrine/deprecations",
+            "version": "1.1.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/deprecations.git",
+                "reference": "459c2f5dd3d6a4633d3b5f46ee2b1c40f57d3f38"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/deprecations/zipball/459c2f5dd3d6a4633d3b5f46ee2b1c40f57d3f38",
+                "reference": "459c2f5dd3d6a4633d3b5f46ee2b1c40f57d3f38",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1 || ^8.0"
+            },
+            "conflict": {
+                "phpunit/phpunit": "<=7.5 || >=13"
+            },
+            "require-dev": {
+                "doctrine/coding-standard": "^9 || ^12 || ^13",
+                "phpstan/phpstan": "1.4.10 || 2.1.11",
+                "phpstan/phpstan-phpunit": "^1.0 || ^2",
+                "phpunit/phpunit": "^7.5 || ^8.5 || ^9.6 || ^10.5 || ^11.5 || ^12",
+                "psr/log": "^1 || ^2 || ^3"
+            },
+            "suggest": {
+                "psr/log": "Allows logging deprecations via PSR-3 logger implementation"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Doctrine\\Deprecations\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A small layer on top of trigger_error(E_USER_DEPRECATED) or PSR-3 logging with options to disable all deprecations or selectively for packages.",
+            "homepage": "https://www.doctrine-project.org/",
+            "support": {
+                "issues": "https://github.com/doctrine/deprecations/issues",
+                "source": "https://github.com/doctrine/deprecations/tree/1.1.5"
+            },
+            "time": "2025-04-07T20:06:18+00:00"
+        },
+        {
+>>>>>>> 1f12e9d397c5bc6da41e148a08dcaed57bdc64e0
             "name": "doctrine/inflector",
             "version": "2.1.0",
             "source": {
@@ -2803,6 +2964,58 @@
             "time": "2025-08-21T11:53:16+00:00"
         },
         {
+<<<<<<< HEAD
+=======
+            "name": "psr/cache",
+            "version": "3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/cache.git",
+                "reference": "aa5030cfa5405eccfdcb1083ce040c2cb8d253bf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/cache/zipball/aa5030cfa5405eccfdcb1083ce040c2cb8d253bf",
+                "reference": "aa5030cfa5405eccfdcb1083ce040c2cb8d253bf",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Cache\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "https://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for caching libraries",
+            "keywords": [
+                "cache",
+                "psr",
+                "psr-6"
+            ],
+            "support": {
+                "source": "https://github.com/php-fig/cache/tree/3.0.0"
+            },
+            "time": "2021-02-03T23:26:27+00:00"
+        },
+        {
+>>>>>>> 1f12e9d397c5bc6da41e148a08dcaed57bdc64e0
             "name": "psr/clock",
             "version": "1.0.0",
             "source": {
@@ -6336,6 +6549,7 @@
             "time": "2025-08-29T05:28:31+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "doctrine/deprecations",
             "version": "1.1.5",
             "source": {
@@ -6384,6 +6598,8 @@
             "time": "2025-04-07T20:06:18+00:00"
         },
         {
+=======
+>>>>>>> 1f12e9d397c5bc6da41e148a08dcaed57bdc64e0
             "name": "fakerphp/faker",
             "version": "v1.24.1",
             "source": {
@@ -7144,6 +7360,7 @@
         },
         {
             "name": "pestphp/pest",
+<<<<<<< HEAD
             "version": "v4.0.4",
             "source": {
                 "type": "git",
@@ -7158,11 +7375,28 @@
             },
             "require": {
                 "brianium/paratest": "^7.11.2",
+=======
+            "version": "v4.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pestphp/pest.git",
+                "reference": "b7406938ac9e8d08cf96f031922b0502a8523268"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pestphp/pest/zipball/b7406938ac9e8d08cf96f031922b0502a8523268",
+                "reference": "b7406938ac9e8d08cf96f031922b0502a8523268",
+                "shasum": ""
+            },
+            "require": {
+                "brianium/paratest": "^7.12.0",
+>>>>>>> 1f12e9d397c5bc6da41e148a08dcaed57bdc64e0
                 "nunomaduro/collision": "^8.8.2",
                 "nunomaduro/termwind": "^2.3.1",
                 "pestphp/pest-plugin": "^4.0.0",
                 "pestphp/pest-plugin-arch": "^4.0.0",
                 "pestphp/pest-plugin-mutate": "^4.0.1",
+<<<<<<< HEAD
                 "pestphp/pest-plugin-profanity": "^4.0.1",
                 "php": "^8.3.0",
                 "phpunit/phpunit": "^12.3.7",
@@ -7171,12 +7405,26 @@
             "conflict": {
                 "filp/whoops": "<2.18.3",
                 "phpunit/phpunit": ">12.3.7",
+=======
+                "pestphp/pest-plugin-profanity": "^4.1.0",
+                "php": "^8.3.0",
+                "phpunit/phpunit": "^12.3.8",
+                "symfony/process": "^7.3.3"
+            },
+            "conflict": {
+                "filp/whoops": "<2.18.3",
+                "phpunit/phpunit": ">12.3.8",
+>>>>>>> 1f12e9d397c5bc6da41e148a08dcaed57bdc64e0
                 "sebastian/exporter": "<7.0.0",
                 "webmozart/assert": "<1.11.0"
             },
             "require-dev": {
                 "pestphp/pest-dev-tools": "^4.0.0",
+<<<<<<< HEAD
                 "pestphp/pest-plugin-browser": "^4.0.2",
+=======
+                "pestphp/pest-plugin-browser": "^4.1.0",
+>>>>>>> 1f12e9d397c5bc6da41e148a08dcaed57bdc64e0
                 "pestphp/pest-plugin-type-coverage": "^4.0.2",
                 "psy/psysh": "^0.12.10"
             },
@@ -7244,7 +7492,11 @@
             ],
             "support": {
                 "issues": "https://github.com/pestphp/pest/issues",
+<<<<<<< HEAD
                 "source": "https://github.com/pestphp/pest/tree/v4.0.4"
+=======
+                "source": "https://github.com/pestphp/pest/tree/v4.1.0"
+>>>>>>> 1f12e9d397c5bc6da41e148a08dcaed57bdc64e0
             },
             "funding": [
                 {
@@ -7256,7 +7508,11 @@
                     "type": "github"
                 }
             ],
+<<<<<<< HEAD
             "time": "2025-08-28T18:19:42+00:00"
+=======
+            "time": "2025-09-10T13:41:09+00:00"
+>>>>>>> 1f12e9d397c5bc6da41e148a08dcaed57bdc64e0
         },
         {
             "name": "pestphp/pest-plugin",
@@ -7550,6 +7806,7 @@
         },
         {
             "name": "pestphp/pest-plugin-profanity",
+<<<<<<< HEAD
             "version": "v4.0.1",
             "source": {
                 "type": "git",
@@ -7560,6 +7817,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/pestphp/pest-plugin-profanity/zipball/823d5d8ae07a265c70f5e1a9ce50639543b0bf11",
                 "reference": "823d5d8ae07a265c70f5e1a9ce50639543b0bf11",
+=======
+            "version": "v4.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pestphp/pest-plugin-profanity.git",
+                "reference": "e279c844b6868da92052be27b5202c2ad7216e80"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pestphp/pest-plugin-profanity/zipball/e279c844b6868da92052be27b5202c2ad7216e80",
+                "reference": "e279c844b6868da92052be27b5202c2ad7216e80",
+>>>>>>> 1f12e9d397c5bc6da41e148a08dcaed57bdc64e0
                 "shasum": ""
             },
             "require": {
@@ -7600,9 +7869,15 @@
                 "unit"
             ],
             "support": {
+<<<<<<< HEAD
                 "source": "https://github.com/pestphp/pest-plugin-profanity/tree/v4.0.1"
             },
             "time": "2025-08-20T12:58:03+00:00"
+=======
+                "source": "https://github.com/pestphp/pest-plugin-profanity/tree/v4.1.0"
+            },
+            "time": "2025-09-10T06:17:03+00:00"
+>>>>>>> 1f12e9d397c5bc6da41e148a08dcaed57bdc64e0
         },
         {
             "name": "phar-io/manifest",
@@ -7946,6 +8221,7 @@
         },
         {
             "name": "phpunit/php-code-coverage",
+<<<<<<< HEAD
             "version": "12.3.6",
             "source": {
                 "type": "git",
@@ -7956,6 +8232,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/da2cdaff87220fa641e7652364281b736e4347e0",
                 "reference": "da2cdaff87220fa641e7652364281b736e4347e0",
+=======
+            "version": "12.3.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
+                "reference": "bbede0f5593dad37af3be6a6f8e6ae1885e8a0a9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/bbede0f5593dad37af3be6a6f8e6ae1885e8a0a9",
+                "reference": "bbede0f5593dad37af3be6a6f8e6ae1885e8a0a9",
+>>>>>>> 1f12e9d397c5bc6da41e148a08dcaed57bdc64e0
                 "shasum": ""
             },
             "require": {
@@ -8011,7 +8299,11 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/php-code-coverage/issues",
                 "security": "https://github.com/sebastianbergmann/php-code-coverage/security/policy",
+<<<<<<< HEAD
                 "source": "https://github.com/sebastianbergmann/php-code-coverage/tree/12.3.6"
+=======
+                "source": "https://github.com/sebastianbergmann/php-code-coverage/tree/12.3.7"
+>>>>>>> 1f12e9d397c5bc6da41e148a08dcaed57bdc64e0
             },
             "funding": [
                 {
@@ -8031,7 +8323,11 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
             "time": "2025-09-02T05:23:14+00:00"
+=======
+            "time": "2025-09-10T09:59:06+00:00"
+>>>>>>> 1f12e9d397c5bc6da41e148a08dcaed57bdc64e0
         },
         {
             "name": "phpunit/php-file-iterator",
@@ -8280,6 +8576,7 @@
         },
         {
             "name": "phpunit/phpunit",
+<<<<<<< HEAD
             "version": "12.3.7",
             "source": {
                 "type": "git",
@@ -8290,6 +8587,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/b8fa997c49682979ad6bfaa0d7fb25f54954965e",
                 "reference": "b8fa997c49682979ad6bfaa0d7fb25f54954965e",
+=======
+            "version": "12.3.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/phpunit.git",
+                "reference": "9d68c1b41fc21aac106c71cde4669fe7b99fca10"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/9d68c1b41fc21aac106c71cde4669fe7b99fca10",
+                "reference": "9d68c1b41fc21aac106c71cde4669fe7b99fca10",
+>>>>>>> 1f12e9d397c5bc6da41e148a08dcaed57bdc64e0
                 "shasum": ""
             },
             "require": {
@@ -8303,7 +8612,11 @@
                 "phar-io/manifest": "^2.0.4",
                 "phar-io/version": "^3.2.1",
                 "php": ">=8.3",
+<<<<<<< HEAD
                 "phpunit/php-code-coverage": "^12.3.3",
+=======
+                "phpunit/php-code-coverage": "^12.3.6",
+>>>>>>> 1f12e9d397c5bc6da41e148a08dcaed57bdc64e0
                 "phpunit/php-file-iterator": "^6.0.0",
                 "phpunit/php-invoker": "^6.0.0",
                 "phpunit/php-text-template": "^5.0.0",
@@ -8313,7 +8626,11 @@
                 "sebastian/diff": "^7.0.0",
                 "sebastian/environment": "^8.0.3",
                 "sebastian/exporter": "^7.0.0",
+<<<<<<< HEAD
                 "sebastian/global-state": "^8.0.0",
+=======
+                "sebastian/global-state": "^8.0.2",
+>>>>>>> 1f12e9d397c5bc6da41e148a08dcaed57bdc64e0
                 "sebastian/object-enumerator": "^7.0.0",
                 "sebastian/type": "^6.0.3",
                 "sebastian/version": "^6.0.0",
@@ -8357,7 +8674,11 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
                 "security": "https://github.com/sebastianbergmann/phpunit/security/policy",
+<<<<<<< HEAD
                 "source": "https://github.com/sebastianbergmann/phpunit/tree/12.3.7"
+=======
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/12.3.8"
+>>>>>>> 1f12e9d397c5bc6da41e148a08dcaed57bdc64e0
             },
             "funding": [
                 {
@@ -8381,6 +8702,7 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
             "time": "2025-08-28T05:15:46+00:00"
         },
         {
@@ -8395,6 +8717,22 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/cli-parser/zipball/6d584c727d9114bcdc14c86711cd1cad51778e7c",
                 "reference": "6d584c727d9114bcdc14c86711cd1cad51778e7c",
+=======
+            "time": "2025-09-03T06:25:17+00:00"
+        },
+        {
+            "name": "sebastian/cli-parser",
+            "version": "4.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/cli-parser.git",
+                "reference": "8fd93be538992d556aaa45c74570129448a42084"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/cli-parser/zipball/8fd93be538992d556aaa45c74570129448a42084",
+                "reference": "8fd93be538992d556aaa45c74570129448a42084",
+>>>>>>> 1f12e9d397c5bc6da41e148a08dcaed57bdc64e0
                 "shasum": ""
             },
             "require": {
@@ -8406,7 +8744,11 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
+<<<<<<< HEAD
                     "dev-main": "4.0-dev"
+=======
+                    "dev-main": "4.1-dev"
+>>>>>>> 1f12e9d397c5bc6da41e148a08dcaed57bdc64e0
                 }
             },
             "autoload": {
@@ -8430,15 +8772,37 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/cli-parser/issues",
                 "security": "https://github.com/sebastianbergmann/cli-parser/security/policy",
+<<<<<<< HEAD
                 "source": "https://github.com/sebastianbergmann/cli-parser/tree/4.0.0"
+=======
+                "source": "https://github.com/sebastianbergmann/cli-parser/tree/4.1.0"
+>>>>>>> 1f12e9d397c5bc6da41e148a08dcaed57bdc64e0
             },
             "funding": [
                 {
                     "url": "https://github.com/sebastianbergmann",
                     "type": "github"
+<<<<<<< HEAD
                 }
             ],
             "time": "2025-02-07T04:53:50+00:00"
+=======
+                },
+                {
+                    "url": "https://liberapay.com/sebastianbergmann",
+                    "type": "liberapay"
+                },
+                {
+                    "url": "https://thanks.dev/u/gh/sebastianbergmann",
+                    "type": "thanks_dev"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/sebastian/cli-parser",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2025-09-13T14:16:18+00:00"
+>>>>>>> 1f12e9d397c5bc6da41e148a08dcaed57bdc64e0
         },
         {
             "name": "sebastian/comparator",

@@ -73,14 +73,22 @@
                     <flux:menu.separator />
 
                     <flux:menu.radio.group>
+<<<<<<< HEAD
                         <flux:menu.item :href="route('settings.profile')" icon="cog" wire:navigate>{{ __('Settings') }}</flux:menu.item>
+=======
+                        <flux:menu.item :href="route('profile.edit')" icon="cog" wire:navigate>{{ __('Settings') }}</flux:menu.item>
+>>>>>>> 1f12e9d397c5bc6da41e148a08dcaed57bdc64e0
                     </flux:menu.radio.group>
 
                     <flux:menu.separator />
 
                     <form method="POST" action="{{ route('logout') }}" class="w-full">
                         @csrf
+<<<<<<< HEAD
                         <flux:menu.item as="button" type="submit" icon="arrow-right-start-on-rectangle" class="w-full">
+=======
+                        <flux:menu.item as="button" type="submit" icon="arrow-right-start-on-rectangle" class="w-full" data-test="logout-button">
+>>>>>>> 1f12e9d397c5bc6da41e148a08dcaed57bdc64e0
                             {{ __('Log Out') }}
                         </flux:menu.item>
                     </form>

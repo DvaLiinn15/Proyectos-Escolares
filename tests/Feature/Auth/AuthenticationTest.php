@@ -3,8 +3,11 @@
 use App\Models\User;
 use Livewire\Volt\Volt as LivewireVolt;
 
+<<<<<<< HEAD
 uses(\Illuminate\Foundation\Testing\RefreshDatabase::class);
 
+=======
+>>>>>>> 1f12e9d397c5bc6da41e148a08dcaed57bdc64e0
 test('login screen can be rendered', function () {
     $response = $this->get(route('login'));
 

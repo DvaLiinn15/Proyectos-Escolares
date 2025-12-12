@@ -3,12 +3,19 @@
 use App\Models\User;
 use Livewire\Volt\Volt;
 
+<<<<<<< HEAD
 uses(\Illuminate\Foundation\Testing\RefreshDatabase::class);
 
 test('profile page is displayed', function () {
     $this->actingAs($user = User::factory()->create());
 
     $this->get(route('settings.profile'))->assertOk();
+=======
+test('profile page is displayed', function () {
+    $this->actingAs($user = User::factory()->create());
+
+    $this->get(route('profile.edit'))->assertOk();
+>>>>>>> 1f12e9d397c5bc6da41e148a08dcaed57bdc64e0
 });
 
 test('profile information can be updated', function () {

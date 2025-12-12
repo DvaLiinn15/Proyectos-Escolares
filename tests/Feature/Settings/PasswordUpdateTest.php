@@ -4,8 +4,11 @@ use App\Models\User;
 use Illuminate\Support\Facades\Hash;
 use Livewire\Volt\Volt;
 
+<<<<<<< HEAD
 uses(\Illuminate\Foundation\Testing\RefreshDatabase::class);
 
+=======
+>>>>>>> 1f12e9d397c5bc6da41e148a08dcaed57bdc64e0
 test('password can be updated', function () {
     $user = User::factory()->create([
         'password' => Hash::make('password'),
